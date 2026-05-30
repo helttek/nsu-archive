@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="fit.snake_game.controller.MenuController"
+            prefHeight="650.0" prefWidth="850.0">
+
+    <Label fx:id="snakeLabel"
+           layoutX="370.0" layoutY="80.0"
+           style="-fx-font-size: 48px; -fx-font-weight: bold; -fx-alignment: center;"
+           text="Snake"/>
+
+    <ImageView fx:id="newGameButton" onMouseClicked="#newGameButtonPressed" pickOnBounds="true" preserveRatio="true"
+               x="340.0" y="230.0">
+        <Image url="@/fit.snake_game/buttons/new_game_button/newGameBut.png"/>
+    </ImageView>
+
+    <ImageView fx:id="connectButton" onMouseClicked="#connectButtonPressed" pickOnBounds="true" preserveRatio="true"
+               x="355.0" y="330.0">
+        <Image url="@/fit.snake_game/buttons/connect_button/connectBut.png"/>
+    </ImageView>
+
+    <ImageView fx:id="exitButton" onMouseClicked="#exitButtonPressed" pickOnBounds="true" preserveRatio="true" x="370.0"
+               y="430.0">
+        <Image url="@/fit.snake_game/buttons/exit_button/exitBut.png"/>
+    </ImageView>
+
+    <TextField fx:id="playerNameField" layoutX="620.0" layoutY="30.0" text="">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </TextField>
+
+    <ImageView fx:id="applyButton" onMouseClicked="#applyButtonPressed" pickOnBounds="true" preserveRatio="true"
+               x="690.0" y="80.0" fitWidth="170" fitHeight="45">
+        <Image url="@/fit.snake_game/buttons/apply_button/applyBut.png"/>
+    </ImageView>
+
+</AnchorPane>
+
